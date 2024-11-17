@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calories Burned Calculator</title>
+    <link rel="stylesheet" href="activitycal.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calories Burned by Activities</h1>
+        <form id="caloriesForm">
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" required>
+            <label for="activity">Activity:</label>
+            <select id="activity">
+                <option value="running">Running</option>
+                <option value="cycling">Cycling</option>
+                <option value="swimming">Swimming</option>
+                <option value="walking">Walking</option>
+                <option value="jumpingRope">Jumping Rope</option>
+            </select>
+            <label for="duration">Duration (minutes):</label>
+            <input type="number" id="duration" required>
+            <button type="button" onclick="calculateCalories()">Calculate</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="activitycal.js"></script>
+</body>
+</html>
